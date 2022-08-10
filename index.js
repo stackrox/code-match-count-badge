@@ -1,6 +1,6 @@
 import express from 'express';
 import { makeBadge, ValidationError } from 'badge-maker'
-import { match } from 'assert';
+import fetch from 'node-fetch'
 
 const app = express();
 
