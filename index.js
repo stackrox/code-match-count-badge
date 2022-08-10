@@ -22,6 +22,8 @@ app.get('/', async function (req, res) {
     };
 
     const svg = makeBadge(format);
+    
+    res.set('Content-Type', 'image/svg+xml');
     res.status(200).send(svg);
 });
 
